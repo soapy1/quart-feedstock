@@ -1,4 +1,4 @@
-{% set version = "0.19.5" %}
+{% set version = "0.20.0" %}
 
 package:
   name: quart
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/q/quart/quart-{{ version }}.tar.gz
-  sha256: fbe3cff25cd18b5c0e8d82bbeeaa43d78f35e5221ca5c50bb0b7c20255c87ab8
+  sha256: 08793c206ff832483586f5ae47018c7e40bdd75d886fee3fabbdaa70c2cf505d
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - quart = quart.cli:main
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - poetry-core >=1.0.0
+    - flit-core <=4.0.0
     - python {{ python_min }}
   run:
     - aiofiles
@@ -66,3 +66,4 @@ extra:
   recipe-maintainers:
     - maxyme
     - dhirschfeld
+    - soapy1
