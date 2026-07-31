@@ -157,4 +157,5 @@ Feedstock Maintainers
 
 * [@dhirschfeld](https://github.com/dhirschfeld/)
 * [@maxyme](https://github.com/maxyme/)
+* [@soapy1](https://github.com/soapy1/)
 
