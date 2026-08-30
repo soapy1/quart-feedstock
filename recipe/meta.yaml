@@ -1,13 +1,13 @@
-{% set version = "0.21.0" %}
-{% set python_min = "3.11" %}
+{% set version = "0.23.1" %}
+{% set python_min = "3.13" %}
 
 package:
   name: quart
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/q/quart/quart-{{ version }}.tar.gz
-  sha256: ec05a784151386cf87df51f764825d55f3ac402df4f04fd1dc81faca8897ceda
+  url: https://files.pythonhosted.org/packages/source/q/quart/quart-{{ version }}.tar.gz
+  sha256: 1ca848415910bd2eb75e9d9b452388f892a37be222602a373622e6c633d1efbf
 
 build:
   noarch: python
